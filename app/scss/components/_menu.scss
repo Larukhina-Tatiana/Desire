@@ -1,0 +1,27 @@
+.menu {
+
+    &__list {
+        display: flex;
+        gap: 76px;
+    }
+
+    &__item--padding-left {
+        padding-left: 45px;
+    }
+
+    &__item--padding-right {
+        padding-right: 53px;
+    }
+
+    &__list--gap {
+        gap: 80px;
+    }
+
+    &__link {
+        padding: 49px 0;
+        @extend %title-font;
+        line-height: calc(22/16);
+        text-align: center;
+        color: var(--link);
+    }
+}

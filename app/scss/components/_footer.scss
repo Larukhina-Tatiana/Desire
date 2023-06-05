@@ -1,0 +1,103 @@
+.footer {
+
+    &__content {
+        padding: 60px 0 80px;
+        background-color: var(--gray);
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 540px;
+    }
+
+    &__info-title {
+        margin-bottom: 14px;
+        @extend %title-font;
+        line-height: calc(23/16);
+        color: var(--title);
+    }
+
+    &__info-text {
+        margin-bottom: 22px;
+        max-width: 476px;
+    }
+
+    &__info-email {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--title);
+        margin-bottom: 25px;
+        // padding-left: 30px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 9px;
+    }
+
+    &__form-input {
+        width: 100%;
+        padding: 6px 10px 6px 18px;
+        border-radius: 21px;
+        background-color: transparent;
+        border: 1px solid rgba(#363838, .7);
+
+        &::placeholder {
+            font-family: 'OpenSans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(27/16);
+            color: #A1A1A1;
+        }
+    }
+
+    &__form-btn {
+        min-width: 160px;
+        padding: 6px 12px;
+        font-weight: 600;
+        background-color: var(--title);
+        border-radius: 21px;
+        color: #FFFFF0;
+    }
+
+    &__social {
+        width: 125px;
+        margin-right: auto;
+        margin-left: 100px;
+    }
+
+    &__menu {
+        width: 125px;
+        margin-right: 60px;
+    }
+
+    &__social-item,
+    &__menu-item {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+    }
+
+    &__social-link,
+    &__menu-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #707070;
+    }
+
+    &__copyright {
+        padding: 42px 0 41px;
+        background-color: var(--title);
+        color: #A1A1A1;
+        text-align: center;
+    }
+}

@@ -62,7 +62,7 @@ function scripts() {
 
     // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
     // 'app/js/*.js',
-    // '!app/js/main.min.js'
+    '!app/js/main.min.js'
   ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())

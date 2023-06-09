@@ -1,10 +1,11 @@
-    (function (){
+const headerBtn = document.querySelector(".header__btn");
+const rightsideMenu = document.querySelector(".rightside-menu");
+const rightsideMenuClose = document.querySelector(".rightside-menu__close");
 
-        $('.header__btn').on('click', function () {
-            $('.rightside-menu').removeClass('rightside-menu--close');
-        });
-        $('.rightside-menu__close').on('click', function () {
-            $('.rightside-menu').addClass('rightside-menu--close');
-        });
+headerBtn.addEventListener("click", () => {
+    rightsideMenu.classList.remove("rightside-menu--close");
+});
 
-    });
+rightsideMenuClose.addEventListener("click", () => {
+    rightsideMenu.classList.add("rightside-menu--close");
+});

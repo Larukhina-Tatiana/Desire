@@ -47,6 +47,7 @@ function includeh() {
 
 
 function styles() {
+  // return src("app/scss/style.scss")
   return src("app/scss/style.scss")
     .pipe(concat("style.min.css"))
     .pipe(scss({ outputStyle: "compressed" }))
@@ -56,7 +57,7 @@ function styles() {
 
 function scripts() {
   return src([
-    "node_modules/swiper/swiper-bundle.js",
+    // "node_modules/swiper/swiper-bundle.js",
     "app/js/main.js",
 
     // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
@@ -89,7 +90,7 @@ function images() {
 }
 
 function sprite() {
-  return src("app/images/*.svg")
+  return src("app/images/icons/*.svg")
     .pipe(
       svgSprite({
         mode: {
@@ -126,10 +127,10 @@ function building() {
   ).pipe(dest("dist"));
 }
 
-// слешение за обновлениями файлов
+// слежение за обновлениями файлов
 function watching() {
-  watch(["app/components/html/*", "app/pages/*"], includeh);
-  watch(["app/scss/style.scss"], styles);
+  // watch(["app/components/html/*", "app/pages/*"], includeh);
+  watch(["app/scss/*.scss", "app/scss/components/*.scss"], styles);
   watch(["app/images/**/*.*"], images);
   watch(["app/js/main.js"], scripts);
 }

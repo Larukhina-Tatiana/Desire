@@ -1,14 +1,14 @@
-@import "../scss/reset";
-@import "../scss/fonts";
-@import "../scss/global";
-@import "../scss/vars";
+@import "./components/_reset";
+@import "./components/_fonts";
+@import "./components/_global";
+@import "./components/_vars";
 
-@import "../scss/components/header";
-@import "../scss/components/menu";
-@import "../scss/components/logo";
+@import "./components/_header";
+@import "./components/_menu";
+@import "./components/_logo";
 
-@import "../scss/components/footer";
+@import "./components/_footer";
 
-@import "../scss/components/rightside-menu";
+@import "./components/_rightside-menu";
 
-@import "../scss/components/top";
+@import "./components/_top";

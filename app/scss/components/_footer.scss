@@ -22,19 +22,22 @@
     }
 
     &__info-text {
-        margin-bottom: 22px;
+        margin-bottom: 16px;
         max-width: 476px;
     }
 
     &__info-email {
         display: flex;
         align-items: center;
-        gap: 17px;
+        gap: 14px;
         font-weight: 600;
         font-size: 14px;
         color: var(--title);
-        margin-bottom: 25px;
-        // padding-left: 30px;
+        margin-bottom: 22px;
+
+        & svg {
+            fill: var(--title);
+        }
     }
 
     &__form {
@@ -47,7 +50,7 @@
         padding: 6px 10px 6px 18px;
         border-radius: 21px;
         background-color: transparent;
-        border: 1px solid rgba(#363838, .7);
+        border: 1px solid rgba(54, 56, 56, .7);
 
         &::placeholder {
             font-family: 'OpenSans', sans-serif;
@@ -64,7 +67,14 @@
         font-weight: 600;
         background-color: var(--title);
         border-radius: 21px;
-        color: #FFFFF0;
+        color: var(--white);
+        @include transition ($transition-property: (background-color, color));
+
+        &:hover {
+            color: var(--title);
+            ;
+            background-color: var(--accent);
+        }
     }
 
     &__social {
@@ -74,24 +84,33 @@
     }
 
     &__menu {
-        width: 125px;
+        width: 135px;
         margin-right: 60px;
     }
 
     &__social-item,
     &__menu-item {
-        margin-bottom: 24px;
-        font-weight: 600;
-        font-size: 14px;
-        color: #707070;
+        &:not(:last-child){
+        margin-bottom: 15px;
+        }
     }
 
     &__social-link,
     &__menu-link {
+        padding: 0 16px;
         display: flex;
         align-items: center;
         gap: 12px;
-        color: #707070;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--dove-gray);
+        line-height: calc(28/14);
+        border-radius: 14px;
+        @include transition ($transition-property: color);
+
+        &:hover {
+            background-color: var(--accent);
+        }
     }
 
     &__copyright {

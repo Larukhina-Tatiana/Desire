@@ -58,10 +58,12 @@ function styles() {
 function scripts() {
   return src([
     // "node_modules/swiper/swiper-bundle.js",
+    "node_modules/slick-carousel/slick/slick.js",
     "app/js/main.js",
 
     // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
     // 'app/js/*.js',
+
     '!app/js/main.min.js'
   ])
     .pipe(concat("main.min.js"))

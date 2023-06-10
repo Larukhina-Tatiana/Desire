@@ -1,16 +1,56 @@
 .top {
+    background-image: url(/app/images/main_slider.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 722px;
+    &__inner{
+        padding-bottom: 70px;
+        
+    }
+
+    &__slider {
+        &-item {
+            display: flex !important;
+            justify-self: center;
+            align-items: center;
+        }
+        &-info {
+            max-width: 645px;
+            margin-left: 25px;
+            }
+            &-img {
+                margin-left: -15%;
+                max-width: 703px;
+                height: 815px;
+                object-fit: cover;
+            }
+    }
+
 
 
     &__slider-title {
-        margin-bottom: 53px;
+        position: relative;
+        margin-bottom: 26px;
+        padding-bottom: 26px;
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 110px;
         line-height: calc(134/110);
         color: var(--title);
+        &::after{
+            position: absolute;
+            content: '';
+            width: 185px;
+            height: 1px;
+            background-color: var(--line);
+            left: 0;
+            bottom: 0;
+        }
     }
 
     &__slider-text {
+        max-width: 568px;
 
     }
 }

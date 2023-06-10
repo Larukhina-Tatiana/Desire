@@ -6,6 +6,7 @@
     --default: #5A5A5A;
     --accent: rgba(255, 239, 53, .9);
     --dove-gray: #707070;
+    --line: #979797;
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){

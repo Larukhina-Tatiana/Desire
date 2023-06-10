@@ -7,13 +7,14 @@
     width: 100%;
     padding-top: 40px;
     background: #FFFFFF;
-    outline: 1px solid red;
     box-shadow: -2px 3px 17px 0 #000;
-    transition: all .5s;
+    // transition: all .5s;
+    @include transition ($transition-property: translateX);
 
     &.rightside-menu--close {
         transform: translateX(500%);
     }
+
     &__close {
         margin-left: 50px;
         margin-bottom: 30px;

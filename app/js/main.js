@@ -9,3 +9,12 @@ headerBtn.addEventListener("click", () => {
 rightsideMenuClose.addEventListener("click", () => {
     rightsideMenu.classList.add("rightside-menu--close");
 });
+
+$(function () {
+    $('.top__slider').slick({
+        arrows: false,
+        dots: true,
+        fade: true,
+        autoplay: true,
+    });
+});

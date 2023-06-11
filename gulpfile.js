@@ -92,7 +92,7 @@ function images() {
 }
 
 function sprite() {
-  return src("app/images/icons/*.svg")
+  return src("app/images/src/icons/*.svg")
     .pipe(
       svgSprite({
         mode: {

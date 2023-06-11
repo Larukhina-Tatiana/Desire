@@ -1,8 +1,16 @@
 .subtitle {
   font-family: 'Montserrat';
-font-weight: 700;
-font-size: 36px;
-line-height: calc(51/36);
-text-align: center;
-color: var(--title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(51/36);
+  text-align: center;
+  color: var(--title);
+
+  &__fourth {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--title);
+  }
 }

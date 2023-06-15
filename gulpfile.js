@@ -36,15 +36,14 @@ function fonts() {
 }
 
 function includeh() {
-  return src( "app/pages/*.html")
+  return src("app/pages/*.html")
     .pipe(
       include({
-        includePaths: "app/components/html"
+        includePaths: "app/components/html",
       })
     )
     .pipe(dest("app"));
 }
-
 
 function styles() {
   // return src("app/scss/style.scss")
@@ -65,7 +64,7 @@ function scripts() {
     // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
     // 'app/js/*.js',
 
-    '!app/js/main.min.js'
+    "!app/js/main.min.js",
   ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -75,20 +74,24 @@ function scripts() {
 function images() {
   // return src(["app/images/**/*.*", "!app/images/**/*.svg"])
   return (
-    src(["app/images/src/*.*", "!app/images/src/*.svg"])
+    src([
+      "app/images/src/*.*",
+      "!app/images/src/*.svg",
+      "app/images/src/about/*.*",
+    ])
       // .pipe(newer("app/images"))
       // .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
-      .pipe(src("app/images/src/*.*"))
-      .pipe(newer("app/images"))
+      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(newer(["app/images", "app/images/about"]))
       .pipe(webp())
 
-      .pipe(src("app/images/src/*.*"))
-      .pipe(newer("app/images"))
+      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(newer(["app/images", "app/images/about"]))
       .pipe(imagemin())
 
-      .pipe(dest("app/images"))
+      .pipe(dest(["app/images", "app/images/about"]))
   );
 }
 

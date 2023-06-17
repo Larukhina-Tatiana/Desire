@@ -23,6 +23,8 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 
 const include = require("gulp-include");
 
+// @fancyapps/fancybox для того чтобы при нажатии на картинку-ссылку с видео - открывалось видео
+
 function fonts() {
   return src("app/fonts/src/*.*")
     .pipe(
@@ -59,6 +61,8 @@ function scripts() {
     // "node_modules/swiper/swiper-bundle.js",
     "node_modules/slick-carousel/slick/slick.js",
     "node_modules/mixitup/dist/mixitup.js",
+    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
+
     "app/js/main.js",
 
     // Для подключения многих (всех) файлов js? Обязательно исключать main.min.js
@@ -76,22 +80,21 @@ function images() {
   return (
     src([
       "app/images/src/*.*",
-      "!app/images/src/*.svg",
-      "app/images/src/about/*.*",
+      "!app/images/src/*.svg"
     ])
       // .pipe(newer("app/images"))
       // .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
       .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
-      .pipe(newer(["app/images", "app/images/about"]))
+      .pipe(newer("app/images"))
       .pipe(webp())
 
       .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
-      .pipe(newer(["app/images", "app/images/about"]))
+      .pipe(newer("app/images"))
       .pipe(imagemin())
 
-      .pipe(dest(["app/images", "app/images/about"]))
+      .pipe(dest("app/images"))
   );
 }
 

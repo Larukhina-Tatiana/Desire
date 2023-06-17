@@ -15,7 +15,7 @@
 @import "./components/_top";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "./components/_slick-dots";
-@import "./components/_about";
+@import "./components/_new-collection";
 @import "./components/_collection";
 @import "./components/_subtitle";
 @import "./components/_action";
@@ -24,3 +24,5 @@
 @import "./components/_tabs-buttons";
 @import "./components/_blog-box";
 @import "./components/_breadcrumbs";
+@import "./components/_about";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";

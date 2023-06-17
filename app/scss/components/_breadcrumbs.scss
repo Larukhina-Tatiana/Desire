@@ -1,5 +1,7 @@
 .breadcrumbs {
   background: rgba(#DFDFDF, .5);
+  position: relative;
+  z-index: 1;
 
 
   &__list {
@@ -40,5 +42,9 @@
     // &:hover {
     //   color: var(--accent);
     // }
+  }
+
+  &--no-bg {
+    background-color: transparent;
   }
 }

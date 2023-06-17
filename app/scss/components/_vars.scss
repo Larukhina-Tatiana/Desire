@@ -19,6 +19,14 @@
     font-weight: 700;
 }
 
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+
 // @include transition ($transition-property: color);
 
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">

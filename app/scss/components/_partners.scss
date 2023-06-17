@@ -1,0 +1,14 @@
+.partners {
+  padding: 16px 0 60px;;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+    margin-bottom: 54px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 272px) / 5);
+  }
+}

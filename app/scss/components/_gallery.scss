@@ -21,4 +21,14 @@
     // max-height: 1148px;
     // height: 100%;
   }
+
+  &.gallery--page {
+    .gallery__item:nth-child(8) {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .gallery__item {
+      max-height: 1165px;
+    }
+  }
 }

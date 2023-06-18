@@ -11,16 +11,25 @@ rightsideMenuClose.addEventListener("click", () => {
 });
 
 $(function () {
-    $('.top__slider').slick({
+    $(".top__slider").slick({
         arrows: false,
         dots: true,
         fade: true,
         autoplay: true,
     });
 
-    var mixer = mixitup('.gallery__inner', {
+    $(".contacts-slider__list").slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        arrows: false,
+        dots: true,
+        // autoplay: true,
+    });
+
+    var mixer = mixitup(".gallery__inner", {
         load: {
-            filter: '.office'
-        }
-    })
+            filter: ".office",
+        },
+    });
+
 });

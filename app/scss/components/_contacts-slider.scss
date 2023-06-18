@@ -1,0 +1,48 @@
+.contacts-slider {
+  padding-bottom: 102px;
+
+  // &__list {
+  //   display: flex;
+  //   gap: 18px;
+
+  // }
+
+  &__item {
+    // flex-basis: calc((100% - 162px) / 9);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover .contacts-slider__title {
+      transform: translateY(0);
+    }
+  }
+
+  &__link {
+    margin-bottom: 35px;
+
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 63px 10px;
+    @extend %title-font;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--link);
+    background-color: rgba(255, 255, 255, .6);
+    @include transition ($transition-property: transform);
+    transform: translateY(calc(100% + 1px));
+  }
+}

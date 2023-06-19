@@ -23,17 +23,11 @@
     padding-left: 285px;
   }
 
-  &__social {
-    display: flex;
-    align-items: center;
-    gap: 36px;
-    margin-bottom: 21px;
-  }
-
   &__addres {
     font-style: normal;
 
     &-link {
+      display: inline-block;
       font-family: inherit;
       font-style: normal;
       font-weight: 400;
@@ -44,6 +38,7 @@
   }
 
   &__text {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 

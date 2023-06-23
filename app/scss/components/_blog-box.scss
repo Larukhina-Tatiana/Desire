@@ -15,9 +15,7 @@
     flex-basis: 540px;
   }
 
-  &__img-link {
-    margin-bottom: 20px;
-  }
+
 
   &__img-link {
     @include transition ($transition-property: scale);
@@ -35,6 +33,7 @@
     font-size: 14px;
     color: var(--dove-gray);
     gap: 9px;
+    margin-top: 20px;
   }
 
   &__author,

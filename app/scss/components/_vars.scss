@@ -34,3 +34,23 @@
 //                   </svg>
 
 // @media screen and (width < 1034px ) {}
+
+//  Линия под заголовками
+//  padding-bottom: 23px;
+// margin-bottom: 23px;
+// position: relative;
+
+// &::after {
+//   position: absolute;
+//   content: '';
+//   width: 200px;
+//   height: 1px;
+//   left: calc(50% - 100px);
+//   bottom: 0;
+//   background-color: #6D7278;
+//   border: 1px solid var(--line);
+//   border-radius: 0.5px;
+// }
+// }
+
+// @extend %title-font;

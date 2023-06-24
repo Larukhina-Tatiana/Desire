@@ -8,11 +8,9 @@
   }
 
   // блок левая часть - свм блог, цитаты, видео, слайдер
-  &__items {
-    max-width: 729px;
-  }
 
   &__item {
+    max-width: 729px;
     margin-bottom: 80px;
 
     &-img {

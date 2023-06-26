@@ -44,6 +44,10 @@
     &-link {
       display: inline-block;
       color: inherit;
+      @include transition ($transition-property: color);
+      &:hover {
+        color: var(--accent);
+      }
     }
   }
 
@@ -60,6 +64,10 @@
 
     &-title {
       color: inherit;
+      @include transition ($transition-property: color);
+      &:hover {
+        color: var(--accent);
+      }
     }
 
     &-date,
@@ -68,6 +76,12 @@
       font-size: 14px;
       line-height: 28px;
       color: #A1A1A1;
+    }
+    &-author {
+    @include transition ($transition-property: color);
+      &:hover {
+        color: var(--accent);
+      }
     }
   }
 

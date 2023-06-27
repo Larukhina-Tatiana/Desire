@@ -1,3 +1,11 @@
 .logo {
-    margin: 0 auto;
+    @media screen and (width > 541px) {
+        margin: 0 auto;
+    }
+
+    @media screen and (width < 541px) {
+        order: -1;
+        position: relative;
+        z-index: 12;
+    }
 }

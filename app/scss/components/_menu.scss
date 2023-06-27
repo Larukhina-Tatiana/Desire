@@ -32,7 +32,7 @@
 
         &--active {
             position: relative;
-            
+
             &::after {
                 position: absolute;
                 content: '';
@@ -43,9 +43,49 @@
                 left: 0;
                 right: 0;
                 bottom: 40px;
-            
             }
-
         }
     }
+
+    @media screen and (width < 768px) {
+        &__list {
+            gap: 20px;
+        }
+
+        &__item--padding-left {
+            padding-left: 15px;
+        }
+
+        &__item--padding-right {
+            padding-right: 15px;
+        }
+
+        &__link {
+            padding: 20px 5px;
+        }
+    }
+
+    @media screen and (width < 541px) {
+        padding-right: 0;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 11;
+        transform: translateY(-350px);
+        @include transition ($transition-property: all);
+        &--open{
+            transform: translateY(30px);
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__item {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+
 }

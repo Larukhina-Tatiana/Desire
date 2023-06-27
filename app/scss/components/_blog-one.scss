@@ -1,4 +1,10 @@
 .blog-one {
+  &.blog {
+   padding: 60px 0 100px;;
+  }
+  &__item.blog__item {
+    margin-bottom: 0;
+  }
   &__item {
     p {
       margin-bottom: 40px;

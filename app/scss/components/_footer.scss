@@ -143,6 +143,13 @@
             }
         }
 
+        &__menu {
+            font-size: 12px;
+            &-link {
+                font-size: inherit;
+            }
+        }
+
         &__social-link,
         &__menu-link {
         padding: 0 7px;

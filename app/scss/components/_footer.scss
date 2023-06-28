@@ -58,7 +58,9 @@
     }
 
     &__menu {
-        width: 135px;
+        @media screen and (width > 822px) {
+            width: 135px;
+        }
         margin-right: 60px;
     }
 
@@ -69,12 +71,24 @@
         }
     }
 
-    &__social-link,
-    &__menu-link {
+    &__social-link {
         padding: 0 16px;
         display: flex;
         align-items: center;
         gap: 12px;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--dove-gray);
+        line-height: calc(28/14);
+        border-radius: 14px;
+        @include transition ($transition-property: color);
+
+        &:hover {
+            background-color: var(--accent);
+        }
+    }
+
+    &__menu-link {
         font-weight: 600;
         font-size: 14px;
         color: var(--dove-gray);
@@ -136,6 +150,6 @@
                 margin-bottom: 15px;
             }
         }
-
     }
+
 }

@@ -61,6 +61,7 @@
         @media screen and (width > 822px) {
             width: 135px;
         }
+
         margin-right: 60px;
     }
 
@@ -150,6 +151,14 @@
                 margin-bottom: 15px;
             }
         }
-    }
 
+        &__social-link,
+        &__menu-link {
+            font-size: 12px;
+        }
+
+        &__copyright {
+            font-size: 14px;
+        }
+    }
 }

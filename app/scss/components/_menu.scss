@@ -66,6 +66,7 @@
     }
 
     @media screen and (width < 541px) {
+        display: none;
         padding-right: 0;
         width: 100%;
         background-color: white;
@@ -73,7 +74,9 @@
         z-index: 11;
         transform: translateY(-350px);
         @include transition ($transition-property: all);
-        &--open{
+
+        &--open {
+            display: block;
             transform: translateY(30px);
         }
 
@@ -86,6 +89,4 @@
             padding-right: 0;
         }
     }
-
-
 }

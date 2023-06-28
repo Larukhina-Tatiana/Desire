@@ -12,7 +12,10 @@ rightsideMenuClose.addEventListener("click", () => {
 
 $('.header__btn-menu').on('click', function () {
     $('.menu').toggleClass('menu--open');
-}) 
+});
+$('.header__btn-menu').on('click', function () {
+    $('.header__inner').toggleClass('header__inner-btn--open');
+}); 
 
 
 

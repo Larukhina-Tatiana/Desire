@@ -3,7 +3,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // height: 120px;
     }
 
     &__btn {
@@ -30,13 +29,19 @@
     }
 
     @media screen and (width < 541px) {
-        &__inner {
+        padding-top: 20px;
+
+        &__inner-btn--open {
             flex-wrap: wrap;
-            padding-top: 42px;
+            // padding-top: 42px;
+
+            .header__btn-menu {
+                order: -1;
+            }
         }
+
         &__btn-menu {
             display: block;
-            order: -1;
             position: relative;
             z-index: 12;
         }

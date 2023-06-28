@@ -73,23 +73,14 @@
     }
 
     &__social-link {
-        padding: 0 16px;
         display: flex;
         align-items: center;
         gap: 12px;
-        font-weight: 600;
-        font-size: 14px;
-        color: var(--dove-gray);
-        line-height: calc(28/14);
-        border-radius: 14px;
-        @include transition ($transition-property: color);
-
-        &:hover {
-            background-color: var(--accent);
-        }
     }
 
-    &__menu-link {
+    &__menu-link,
+    &__social-link {
+        padding: 0 16px;
         font-weight: 600;
         font-size: 14px;
         color: var(--dove-gray);

@@ -1,8 +1,6 @@
 .top {
-    // background-color: aquamarine;
     &__inner {
         padding-bottom: 87px;
-        
         position: relative;
 
         &::after {
@@ -15,7 +13,6 @@
             z-index: -1;
             top: 0;
         }
-
     }
 
     &__slider {
@@ -31,7 +28,9 @@
         }
 
         &-img {
-            margin-left: -14%;
+            @media screen and (width > 1184px) {
+                margin-left: -14%;
+            }
             max-width: 703px;
             height: 815px;
             object-fit: cover;
@@ -39,15 +38,13 @@
     }
 
 
-
     &__slider-title {
         position: relative;
         margin-bottom: 26px;
         padding-bottom: 26px;
-        font-family: 'Montserrat';
-        font-weight: 700;
+        @extend %title-font;
         font-size: 110px;
-        line-height: calc(134/110);
+        line-height: 1.2;
         color: var(--title);
 
         &::after {
@@ -64,5 +61,94 @@
     &__slider-text {
         max-width: 568px;
 
+    }
+
+    @media screen and (width < 1185px) {
+        &__slider-title {
+            font-size: 62px;
+        }
+
+        &__slider {
+            &-img {
+                height: 600px;
+            }
+        }
+    }
+
+    @media screen and (width < 889px) {
+
+        &__inner::after {
+            height: 100%;
+            background-size: cover;
+        }
+        &__slider-title {
+            font-size: 44px;
+        }
+
+        &__slider {
+            &-img {
+                height: 540px;
+            }
+        }
+    }
+
+    @media screen and (width < 727px) {
+        &__slider-title {
+            font-size: 34px;
+        }
+
+        &__slider {
+            &-img {
+                height: 440px;
+            }
+        }
+    }
+
+    @media screen and (width < 651px) {
+        &__inner {
+            padding-bottom: 15px;
+        }
+        &__slider-title {
+            font-size: 34px;
+        }
+
+        &__slider {
+            &-img {
+                height: 280px;
+            }
+        }
+
+        // .slick-slide img {
+            
+        //         display: none;
+            
+        // }
+    }
+
+    @media screen and (width < 487px) {
+ 
+        &__slider-title {
+            margin-top: 15px;
+            font-size: 24px;
+            &::after {
+                width: 128px;
+            }
+        }
+
+        &__slider {
+            &-img {
+                height: 200px;
+            }
+        }
+
+        &__slider-text {
+            font-size: 12px;
+        }
+
+        // .slick-slide img {
+            
+        //         display: none;
+            
+        // }
     }
 }

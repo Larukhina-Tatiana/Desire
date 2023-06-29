@@ -5,7 +5,7 @@
   padding-bottom: 70px;
 
   &__item {
-    flex-basis: 350px;
+    // flex-basis: 350px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -62,12 +62,11 @@
   }
 
   &__info-text {
-    font-family: 'OpenSans';
+    // font-family: 'OpenSans';
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
     color: var(--dove-gray);
-
   }
 
   @media screen and (width < 1167px) {
@@ -76,16 +75,21 @@
     }
   }
 
-  @media screen and (width < 691px) {
+  @media screen and (width < 1167px) {
+    &__info {
+      top: 100px;
+    }
+  }
+
+  @media screen and (width < 881px) {
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    &__img {
+      width: 100%;
+    }
   }
 
   @media screen and (width < 561px) {
-    grid-template-columns: repeat(3, 1fr);
-    &__img {
-      width: 100%;
-
-    }
-
+    grid-template-columns: repeat(2, 1fr);
   }
 }

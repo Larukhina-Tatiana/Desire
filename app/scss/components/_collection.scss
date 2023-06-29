@@ -9,7 +9,8 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    &:hover .collection__info{
+
+    &:hover .collection__info {
       transform: translateY(0);
     }
   }
@@ -33,13 +34,12 @@
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, .6);
-    @include transition ($transition-property:  transform);
+    @include transition ($transition-property: transform);
     transform: translateY(calc(100% + 1px));
   }
 
   &__info-title {
-    font-family: 'Montserrat';
-    font-weight: 700;
+    @extend %title-font;
     font-size: 20px;
     line-height: calc(24/20);
     text-align: center;
@@ -67,6 +67,25 @@
     font-size: 14px;
     line-height: 28px;
     color: var(--dove-gray);
+
+  }
+
+  @media screen and (width < 1167px) {
+    &__info {
+      top: 100px;
+    }
+  }
+
+  @media screen and (width < 691px) {
+    gap: 10px;
+  }
+
+  @media screen and (width < 561px) {
+    grid-template-columns: repeat(3, 1fr);
+    &__img {
+      width: 100%;
+
+    }
 
   }
 }

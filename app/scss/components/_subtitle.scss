@@ -16,5 +16,10 @@
     font-size: 16px;
     line-height: 23px;
     color: var(--title);
-  }  
+  }
+  
+  @media screen and (width < 561px) {
+    font-size: 25px;
+    line-height: 1.2;
+  }
 }

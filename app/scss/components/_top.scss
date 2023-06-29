@@ -122,7 +122,7 @@
     @media screen and (width < 487px) {
         &__slider-title {
             margin-top: 15px;
-            font-size: 24px;
+            font-size: 27px;
             &::after {
                 width: 60%;
             }
@@ -130,7 +130,7 @@
 
         &__slider {
             &-img {
-                height: 200px;
+                height: 160px;
             }
         }
 

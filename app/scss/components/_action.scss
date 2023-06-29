@@ -28,4 +28,10 @@
   &__text {
     max-width: 540px;
   }
+
+  @media screen and (width < 881px) {
+    margin-bottom: 40px;
+    padding: 70px 0 55px;
+    min-height: 100%;
+  }
 }

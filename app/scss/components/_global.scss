@@ -108,11 +108,14 @@ button,
 }
 
 .section__title {
-    font-family: 'Montserrat';
-    font-weight: 700;
+    @extend %title-font;
     font-size: 60px;
-    line-height: 80px;
+    line-height: calc(80/60);
     color: var(--title);
+
+    @media screen and (width < 881px) {
+        font-size: 34px;
+    }
 }
 
 .visually-hidden {

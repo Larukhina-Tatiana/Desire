@@ -5,7 +5,6 @@
   // padding-bottom: 70px;
 
   &__item {
-    // flex-basis: 350px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -62,7 +61,6 @@
   }
 
   &__info-text {
-    // font-family: 'OpenSans';
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
@@ -82,7 +80,6 @@
   @media screen and (width < 938px) {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-
     &__img {
       width: 100%;
     }

@@ -1,6 +1,6 @@
 .top {
+    margin-bottom: 87px;
     &__inner {
-        padding-bottom: 87px;
         position: relative;
 
         &::after {
@@ -64,6 +64,10 @@
     }
 
     @media screen and (width < 1185px) {
+        &__inner::after {
+            height: 100%;
+            background-size: cover;
+        }
         &__slider-title {
             font-size: 62px;
         }
@@ -77,10 +81,6 @@
 
     @media screen and (width < 889px) {
 
-        &__inner::after {
-            height: 100%;
-            background-size: cover;
-        }
         &__slider-title {
             font-size: 44px;
         }

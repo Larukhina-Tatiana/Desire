@@ -36,10 +36,25 @@
   }
 
   @media screen and (width < 993px) {
-
-    
     &__list {
       gap: 10px;
+    }
+  }
+
+  @media screen and (width < 551px) {
+    padding: 40px 0 50px;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item:first-child {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  }
+
+  @media screen and (width < 376px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

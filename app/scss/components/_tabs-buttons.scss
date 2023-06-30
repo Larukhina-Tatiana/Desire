@@ -26,11 +26,14 @@
 
   @media screen and (width < 993px) {
       gap: 7px;
-
-      // &__btn {
-      //   padding: 6px 6px;
-      // }
   }
+
+  @media screen and (width < 481px) {
+    &__btn {
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+}
 }
 
 .mixitup-control-active {

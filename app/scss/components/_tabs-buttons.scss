@@ -1,5 +1,6 @@
 .tabs-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   text-align: center;
   align-items: center;
@@ -8,7 +9,6 @@
 
   &__btn {
     padding: 6px 16px;
-    min-width: 160px;
     opacity: 0.5;
     border: 1px solid #454647;
     border-radius: 20px;
@@ -22,6 +22,14 @@
       color: var(--title);
       background: rgba(#FFEF35, .5) ;
     }
+  }
+
+  @media screen and (width < 993px) {
+      gap: 7px;
+
+      // &__btn {
+      //   padding: 6px 6px;
+      // }
   }
 }
 

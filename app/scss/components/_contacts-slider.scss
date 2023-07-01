@@ -45,4 +45,10 @@
     @include transition ($transition-property: transform);
     transform: translateY(calc(100% + 1px));
   }
+
+  @media screen and (width < 1781px) {
+    &__img {
+      width: 100%;;
+    }
+  }
 }

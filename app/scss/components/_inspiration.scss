@@ -74,7 +74,17 @@
     border-radius: 4px;
     background-color: var(--title);
     margin-top: -2px;
-
   }
 
+  @media screen and (width < 769px) {
+    &__img{
+      display: none;
+    }
+  }
+
+  @media screen and (width < 382px) {
+    &__item-text {
+      margin-right: 10px;
+    }
+  }
 }

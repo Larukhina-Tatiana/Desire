@@ -42,9 +42,6 @@
     margin-bottom: 10px;
   }
 
-  // &__address-text:last-child {
-  //   margin-bottom: 16px;
-  // }
   &__address-text + &__address-text {
     margin-bottom: 16px;
   }
@@ -54,6 +51,7 @@
     max-width: 825px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
 
     &-input,
@@ -90,6 +88,25 @@
     & .forms-button {
       min-width: 180px;
     }
+  }
 
+  @media screen and (width < 841px) {
+    &__inner {
+      padding-left: 0
+    }
+  }
+
+  @media screen and (width < 641px) {
+    &__form {
+
+      &-input,
+      &-textarea {
+        width: 100%;
+      }
+
+      &-input {
+        margin-bottom: 7px;
+      }
+    }
   }
 }

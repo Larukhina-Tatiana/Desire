@@ -94,5 +94,11 @@
             padding-left: 0;
             padding-right: 0;
         }
+
+        &__link {
+            &--active::after {
+                display: none;
+            }
+        }
     }
 }

@@ -15,8 +15,6 @@
     flex-basis: 540px;
   }
 
-
-
   &__img-link {
     @include transition ($transition-property: scale);
 
@@ -28,6 +26,7 @@
 
   &__links {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 7px;
     font-weight: 600;
     font-size: 14px;
@@ -56,5 +55,43 @@
       }
     }
   }
+
+  @media screen and (width > 890px) and (width < 1047px) {
+    padding-bottom: 50px;
+
+    &__list {
+      gap: 10px;
+    }
+
+    &__links {
+      font-size: 12px;
+      gap: 5px;
+    }
+  }
+
+  @media screen and (width < 891px) {
+    &__list {
+    display: block;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+    
+    &__img {
+      width: 100%;
+    }
+  }
+
+  // @media screen and (width < 528px) {
+  //   &__list {
+  //     gap: 10px;
+  //   }
+
+  //   &__links {
+  //     font-size: 12px;
+  //     gap: 3px;
+  //   }
+  // }
 
 }

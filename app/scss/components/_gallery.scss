@@ -50,7 +50,14 @@
       grid-row: 1;
       grid-column: 1;
     }
+
+    &.gallery--page {
+      .gallery__item:nth-child(8) {
+        grid-row: span 1;
+        grid-column: span 1;
+      }
   }
+}
 
   @media screen and (width < 376px) {
     &__list {

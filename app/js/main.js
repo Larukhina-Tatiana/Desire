@@ -28,72 +28,105 @@ $(function () {
         autoplay: true,
     });
 
-    // $(".contacts-slider__list").slick({
-    //     slidesToShow: 10,
-    //     slidesToScroll: 10,
-    //     arrows: false,
-    //     dots: true,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1920,
-    //             settings: {
-    //                 slidesToShow: 10,
-    //                 slidesToScroll: 10,
-    //                 dots: true
-    //             }
+    $(".contacts-slider__list").slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1781,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 8,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1511,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 1181,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+        ]
+    });
+
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    //     breakpoints: {
+    //         640: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 10,
     //         },
-    //         {
-    //             breakpoint: 1781,
-    //             settings: {
-    //                 slidesToShow: 8,
-    //                 slidesToScroll: 8,
-    //                 dots: true
-    //             }
+    //         1181: {
+    //             slidesPerView: 4,
+    //             spaceBetween: 10,
     //         },
-    //         {
-    //             breakpoint: 1511,
-    //             settings: {
-    //                 slidesToShow: 6,
-    //                 slidesToScroll: 6
-    //             }
+    //         1511: {
+    //             slidesPerView: 6,
+    //             spaceBetween: 10,
     //         },
-    //         {
-    //             breakpoint: 1181,
-    //             settings: {
-    //                 slidesToShow: 4,
-    //                 slidesToScroll: 4
-    //             }
-    //         }
-    //     ]
+    //         1781: {
+    //             slidesPerView: 8,
+    //             spaceBetween: 10,
+    //         },
+            
+    //     },
     // });
 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 10,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1181: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-            1511: {
-                slidesPerView: 6,
-                spaceBetween: 30,
-            },
-            1781: {
-                slidesPerView: 8,
-                spaceBetween: 20,
-            },
-            
-        },
-    });
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 5,
+    //     spaceBetween: 10,
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //       clickable: true,
+    //     },
+    //     breakpoints: {
+    //       "@0.00": {
+    //         slidesPerView: 1,
+    //         spaceBetween: 10,
+    //       },
+    //       "@0.75": {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //       },
+    //       "@1.00": {
+    //         slidesPerView: 3,
+    //         spaceBetween: 40,
+    //       },
+    //       "@1.50": {
+    //         slidesPerView: 4,
+    //         spaceBetween: 50,
+    //       },
+    //     },
+    //   });
 
     $(".article-slider__box").slick({
         prevArrow:

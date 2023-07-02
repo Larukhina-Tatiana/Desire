@@ -1,14 +1,7 @@
 .contacts-slider {
   padding-bottom: 102px;
 
-  // &__list {
-  //   display: flex;
-  //   gap: 18px;
-
-  // }
-
   &__item {
-    // flex-basis: calc((100% - 162px) / 9);
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -49,6 +42,19 @@
   @media screen and (width < 1781px) {
     &__img {
       width: 100%;;
+    }
+  }
+
+  @media screen and (width < 1201px) {
+    &__img {
+      height: 240px;
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (width < 376px) {
+    &__img {
+      height: 310px;
     }
   }
 }

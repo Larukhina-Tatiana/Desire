@@ -46,13 +46,20 @@
   }
 
   @media screen and (width < 1201px) {
+    &__title {
+      padding: 100px 30px;
+    }
     &__img {
       height: 240px;
       margin-right: 10px;
     }
   }
 
+
   @media screen and (width < 376px) {
+    &__title {
+      padding: 133px 10px;
+    }
     &__img {
       height: 310px;
     }

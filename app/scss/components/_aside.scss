@@ -88,4 +88,10 @@
   & .social-media {
     gap: 20px;
   }
+
+  @media screen and (width < 1041px ) {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+  }
 }

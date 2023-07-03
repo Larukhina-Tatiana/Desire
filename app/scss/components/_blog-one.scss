@@ -107,6 +107,7 @@
   @media screen and (width < 541px ) {
     &__item {
       & p {
+        margin-top: 30px;
         margin-bottom: 30px;
       }
       blockquote {

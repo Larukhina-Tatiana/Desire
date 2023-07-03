@@ -141,19 +141,40 @@
       font-size: 14px;
     }
 
+    &__item {
+      flex-wrap: wrap;
+      gap: 10px;
+
+      &-avatar {
+        width: 45px;
+        height: 45px;
+      }
+
+      &-author,
+      &-data {
+        margin-left: 55px;
+      }
+
+      &-info {
+        margin-top: -56px;
+      }
+    }
+
     &__form {
       &-input {
         width: 100%;
       }
-&-checkbox-style {
-  width: 16px;
-  height: 16px;
-}
-&-checkbox:checked + &-checkbox-style::before {
-  width: 15px;
-  height: 15px;
-  font-size: 17px;
-}
+
+      &-checkbox-style {
+        width: 16px;
+        height: 16px;
+      }
+
+      &-checkbox:checked + &-checkbox-style::before {
+        width: 15px;
+        height: 15px;
+        font-size: 17px;
+      }
     }
   }
 }

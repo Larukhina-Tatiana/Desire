@@ -96,7 +96,45 @@
         right: 0;
       }
     }
-
   }
 
+  @media screen and (width < 1041px ) {
+    // &__item {
+    //   margin-top: 30px;
+    // }
+  }
+
+  @media screen and (width < 541px ) {
+    &__item {
+      & p {
+        margin-bottom: 30px;
+      }
+      blockquote {
+        font-size: 16px;
+      }
+    }
+    &__prev-links {
+      gap: 10px;
+    }
+
+    &__prev-link {
+      font-size: 12px;
+    }
+
+    &__prev-link--next{
+      padding-right: 18px;
+    }
+
+    &__prev-link--prev {
+      padding-left: 18px;
+    }
+
+    & .aside {
+      margin-top: 30px;
+      order: 1;
+    }
+
+
+
+  }
 }

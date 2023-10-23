@@ -83,9 +83,9 @@ $(function () {
 
   $(".article-slider__box").slick({
     prevArrow:
-      '<button type="button" class="article-slider__arrow article-slider__arrow--left"><img src="../images/prev.svg" alt="icon prev"></button>',
+      '<button type="button" class="article-slider__arrow article-slider__arrow--left"><img src="./images/prev.svg" alt="icon prev"></button>',
     nextArrow:
-      '<button type="button" class="article-slider__arrow article-slider__arrow--right"><img src="../images/next.svg" alt="icon next"></button>',
+      '<button type="button" class="article-slider__arrow article-slider__arrow--right"><img src="./images/next.svg" alt="icon next"></button>',
   });
 });
 

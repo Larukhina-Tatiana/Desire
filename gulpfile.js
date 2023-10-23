@@ -139,9 +139,9 @@ function building() {
 // слежение за обновлениями файлов
 function watching() {
   // watch(["app/components/html/*", "app/pages/*"], includeh);
-  watch(["app/scss/*.scss", "app/scss/components/*.scss"], styles);
-  watch(["app/images/**/*.*"], images);
-  watch(["app/js/main.js"], scripts);
+  watch(["scss/*.scss", "app/scss/components/*.scss"], styles);
+  watch(["images/**/*.*"], images);
+  watch(["js/main.js"], scripts);
 }
 
 exports.fonts = fonts;

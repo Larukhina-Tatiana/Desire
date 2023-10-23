@@ -20,6 +20,7 @@ if ($(window).width() < 641) {
   $(".works-path__item--measurements").appendTo($(".works-path__items-box"));
 }
 
+
 $(function () {
   $(".top__slider").slick({
     arrows: false,

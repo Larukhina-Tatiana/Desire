@@ -156,4 +156,4 @@ exports.watching = watching;
 exports.build = series(cleanDist, building);
 
 // exports.default = parallel(styles, images, scripts, includeh, watching);
-exports.default = parallel(images, sprite, scripts, watching);
+exports.default = parallel(images, styles, sprite, scripts, watching);
